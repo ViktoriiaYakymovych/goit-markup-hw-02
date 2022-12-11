@@ -2,12 +2,29 @@
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
     --accent-color: #4D5AE5;
+    --hover-color: #404BBF;
+    --white-color: #FFFFFF;
+    --white-milk-color: #F4F4FD;
+    --footer-text-color: #E7E9FC;
     
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .page {
     color: var(--primary-text-color);
-    background-color: #E5E5E5;
+    background-color: var(--white-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.02em;
 }
@@ -17,12 +34,12 @@
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 .logo {
     color: var(--accent-color);
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -33,7 +50,7 @@ header {
 
 .logo-span {
     color: var(--title-text-color);
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -78,7 +95,7 @@ header {
 }
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--white-color);
     font-weight: 600;
     font-size: 56px;
     line-height: 1.07;
@@ -86,8 +103,9 @@ header {
 }
 
 .button {
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: var(--accent-color);
+    cursor: pointer;
     font-family: inherit;
     font-weight: 600;
     font-size: 16px;
@@ -98,7 +116,12 @@ header {
 
 .button:hover,
 .button:focus {
-    color: var(--accent-color);
+    background-color: var(--hover-color);
+    color: var(--white-color);
+}
+
+.section {
+    list-style: none;
 }
 
 .section-title {
@@ -109,6 +132,7 @@ header {
     text-align: center;
 }
 
+
 .section-name {
     color:var(--title-text-color);
     font-weight: 600;
@@ -117,17 +141,17 @@ header {
 }
 
 .section-team {
-    background-color: #F4F4FD;
+    background-color: var(--white-milk-color);
 }
 
 .section-team-list {
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 
 
 .section-portfolio-list {
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 .section-portfolio-link {
@@ -135,9 +159,10 @@ header {
     text-decoration: none;
 }
 
-.button-color {
-    background-color: #F4F4FD;
+.button-portfolio {
+    background-color: var(--white-milk-color);
     color: var(--accent-color);
+    cursor: pointer;
     font-family: inherit;
     font-weight: 600;
     font-size: 16px;
@@ -146,7 +171,11 @@ header {
     text-align: center;
 }
 
-
+.button-portfolio:hover,
+.button-portfolio:focus {
+    background-color: var(--hover-color);
+    color: var(--white-color);
+}
 
 
 
@@ -157,8 +186,8 @@ footer {
 }
 
 .logo-span-footer {
-    color: #F4F4FD;
-    font-family: 'Raleway';
+    color: var(--white-milk-color);
+    font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -172,7 +201,7 @@ footer {
 }
 
 .footer-text {
-    color: #E7E9FC;
+    color: var(--footer-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
